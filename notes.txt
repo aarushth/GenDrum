@@ -1,0 +1,68 @@
+params
+
+-lower batch size
+
+-increase epoch until validation loss stabilizes
+
+-compare loss function over different training cycles
+
+
+
+
+v_9
+
+lowered batch size/learning rate
+fixed labelling
+added 70_15_15 test split
+
+
+model struggles to differentiate claps and snaps.
+
+v_10
+increased weight decay
+
+performance was worse
+
+v_11 
+
+reverted weight decay
+increased epochs to 15
+
+slightly better performance/ model is less certain on wrong answers between snap/clap
+
+v_12
+
+tried batch size 1
+
+didn't work
+
+v_13
+reverted to batch size 2
+increased epochs to 20
+decreased learning rate to 0.0001
+
+almost perfect !!!
+
+
+v_14
+lowered dropout to 0.4
+
+slightly worse
+
+v_15
+
+reverted dropout to 0.5
+added another linear layer
+
+couldn't figure out snaps :(
+
+v_16
+
+deleted linear layer
+
+worse for some reason
+
+v_17
+
+same as 13/16
+
